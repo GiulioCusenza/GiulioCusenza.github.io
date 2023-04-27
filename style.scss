@@ -1,12 +1,4 @@
-$main-red: #C00000;
-
-@font-face {
-    font-family: "minecraft";
-    src: url("C:\\Users\gicus\OneDrive\Documenti\Font\Minecraft\Minecraft.ttf");
-    font-weight: bold;
-}
-
-
+$main-red: #fc3b3b;
 
 html, body {
     margin: 0;
@@ -18,8 +10,8 @@ header {
     margin: 0;
     background-color: $main-red;
 
-    h1, h1 a {
-        font-family: minecraft;
+    h1, h2, h2 a {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: white;
     }
 }
