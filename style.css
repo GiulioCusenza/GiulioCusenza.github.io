@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "minecraft";
+  src: url("C:\\UsersgicusOneDrive\documenti\fontMinecraftMinecraft.ttf");
+  font-weight: bold;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  margin: 0;
+  background-color: #C00000;
+}
+header h1, header h1 a {
+  font-family: minecraft;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
