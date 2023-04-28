@@ -1,0 +1,20 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif; }
+
+header {
+  padding: 10px;
+  background-color: #fc3b3b; }
+  header h1, header h3, header h3 a, header #subtitle {
+    margin: 0;
+    color: white;
+    transition: 180ms; }
+  header h3 a:hover {
+    color: #ffb9b9; }
+
+main {
+  padding: 10px; }
+
+/*# sourceMappingURL=style.css.map */

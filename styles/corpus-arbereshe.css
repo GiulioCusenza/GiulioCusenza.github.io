@@ -1,0 +1,47 @@
+html, body {
+  height: 100%; }
+
+html {
+  display: table;
+  margin: auto;
+  background-color: #630000; }
+
+body {
+  display: table-cell;
+  max-width: 900px;
+  background-color: white; }
+
+div#form {
+  display: block;
+  text-align: center; }
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto; }
+
+input#sentence {
+  margin-top: 15px;
+  height: 30px;
+  width: 250px;
+  border-radius: 10px;
+  font-size: 15px; }
+
+input#submit {
+  height: 35px;
+  width: 35px;
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: #f81d1d;
+  transition: 200ms; }
+
+input#submit:hover {
+  filter: brightness(180%); }
+
+input#submit:active {
+  margin: 1px;
+  height: 33px;
+  width: 33px;
+  filter: brightness(400%); }
+
+/*# sourceMappingURL=corpus-arbereshe.css.map */
