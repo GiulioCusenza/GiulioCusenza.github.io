@@ -20,15 +20,56 @@
             tutti i giorni. Le frasi andranno a costituire un prezioso corpus
             linguistico utile per lo studio della lingua e tante altre
             applicazioni. Scopri di più sui possibili usi dei dati
-            <a href="" target="_blank" rel="noopener noreferrer">qui</a>.
+            <a href="">qui</a>.
         </p>
-        <h2>Contribuisci</h2>
-        <div id="form">
-            <form action="/sentence.php" method="get">
+        <div id="contribute">
+            <h2>Contribuisci</h2>
+            <p>
+                Totale frasi: 
+            </p>
+            <form method="post" id="contribute">
                 <input type="text" id="sentence" name="sentence" placeholder="Inserisci una frase detta oggi"><br><br>
-                <input type="submit" id="submit" value="✔">
+                <input type="submit" id="submit" name="submit" value="✔">
             </form>
+            <p>
+                Grazie per aver contribuito!
+            </p>
         </div>
     </main>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-database.js";
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDClvB3cUbJSUlO90k82gx-ld03CezVEXQ",
+          authDomain: "corpus-arbereshe.firebaseapp.com",
+          databaseURL: "https://corpus-arbereshe-default-rtdb.europe-west1.firebasedatabase.app",
+          projectId: "corpus-arbereshe",
+          storageBucket: "corpus-arbereshe.appspot.com",
+          messagingSenderId: "569655701882",
+          appId: "1:569655701882:web:71c0d2575d7280b32726c3"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        // Get a reference to the database service
+        const db = getDatabase(app);
+        
+        document.getElementById('contribute').addEventListener('submit', function(e) {
+            e.preventDefault();
+            set(ref(db, "sentences/daily/"), {
+                text: document.getElementById("sentence").value
+            });
+        
+            alert('Your form is submitted');
+            document.getElementById('contribute').reset();
+        });
+    </script>
 </body>
 </html>
