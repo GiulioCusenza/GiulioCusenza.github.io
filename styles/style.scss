@@ -35,4 +35,8 @@ header {
 
 main {
     padding: 20px;
+
+    #intro ul {
+        list-style-type: "> ";
+    }
 }

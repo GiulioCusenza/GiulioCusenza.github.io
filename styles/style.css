@@ -31,4 +31,7 @@ header h3 a:hover {
 
 main {
   padding: 20px;
+}
+main #intro ul {
+  list-style-type: "> ";
 }/*# sourceMappingURL=style.css.map */
