@@ -1,42 +1,121 @@
-$soft-red: #fc3b3b;
+$pastel-red: #fc3b3b;
+$soft-red: #ffb8b8;
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 html {
-    display: table;
-    margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(63, 0, 0);
+  display: table;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(229, 208, 208);
 }
 
 body {
-    display: table-cell;
-    max-width: 900px;
-    background-color: white;
+  display: table-cell;
+  max-width: 900px;
+  background-color: white;
 }
 
 header {
-    padding: 20px;
-    background-color: $soft-red;
+  padding: 20px;
+  background-color: $soft-red;
+  position: relative;
+  z-index: 1;
 
-    h1 {
-        margin: 0;
-        color: white;
-    }
-
-    h3 a:hover {
-        color: rgb(255, 185, 185);
-    }
+  h1 {
+    margin: 0;
+    font-size: 36px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: $pastel-red;
+  }
 }
 
 main {
-    padding: 20px;
+  #intro {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    position: relative;
+    left: -30px;
+    top: -40px;
 
-    #intro ul {
-        list-style-type: "> ";
+    #intro-pic {
+      height: 450px;
+      width: 450px;
+      object-fit: cover;
+      object-position: -75px 0;
+      border-radius: 50%;
     }
+
+    #intro-text {
+      display: flex;
+      flex-direction: column;
+      margin: auto 0;
+      font-size: 22px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+
+      p {
+        margin: 15px 0;
+      }
+
+      #contacts {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        a {
+            text-decoration: none;
+            transition: 200ms;
+
+            &:hover {
+                filter: brightness(.8);
+            }
+
+            &:active {
+                filter: brightness(.6);
+            }
+        }
+        img#mail-svg {
+          height: 34px;
+          color: #6e9cb3;
+          filter: invert(66%) sepia(14%) saturate(862%) hue-rotate(155deg) brightness(87%) contrast(90%);
+        }
+        svg#linkedin-svg {
+            height: 32px;
+            color: #0A66C2;
+        }
+        img#github-svg {
+            height: 29px;
+        }
+      }
+    }
+
+    #view-cv {
+        background-color: $pastel-red;
+        padding: 6px 10px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 0 rgb(136, 52, 52);
+        transition: 200ms;
+
+        &:hover {
+            background-color: #cf3131;
+        }
+
+        &:active {
+            background-color: #a32626;
+        }
+    
+        a {
+            font-size: 22px;
+            color: white;
+            text-decoration: none;
+        }
+    }
+  }
 }
