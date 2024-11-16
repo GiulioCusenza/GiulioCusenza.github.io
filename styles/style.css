@@ -31,75 +31,95 @@ header h1 {
   color: #fc3b3b;
 }
 
-main #intro {
+#intro {
   display: flex;
   flex-direction: row;
   gap: 25px;
-  position: relative;
-  left: -30px;
-  top: -40px;
+  padding: 10px;
 }
-main #intro #intro-pic {
+#intro-pic {
   height: 450px;
   width: 450px;
   -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: -75px 0;
-     object-position: -75px 0;
+  object-fit: cover;
+  position: relative;
+  left: -40px;
+  top: -40px;
   border-radius: 50%;
 }
-main #intro #intro-text {
+#intro-text {
   display: flex;
   flex-direction: column;
   margin: auto 0;
   font-size: 22px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-main #intro #intro-text p {
+#intro-text p {
   margin: 15px 0;
 }
-main #intro #intro-text #contacts {
+#intro-text #contacts {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-main #intro #intro-text #contacts a {
+#intro-text #contacts a {
   text-decoration: none;
   transition: 200ms;
 }
-main #intro #intro-text #contacts a:hover {
+#intro-text #contacts a:hover {
   filter: brightness(0.8);
 }
-main #intro #intro-text #contacts a:active {
+#intro-text #contacts a:active {
   filter: brightness(0.6);
 }
-main #intro #intro-text #contacts img#mail-svg {
+#intro-text #contacts img#mail-svg {
   height: 34px;
   color: #6e9cb3;
   filter: invert(66%) sepia(14%) saturate(862%) hue-rotate(155deg) brightness(87%) contrast(90%);
 }
-main #intro #intro-text #contacts svg#linkedin-svg {
+#intro-text #contacts svg#linkedin-svg {
   height: 32px;
-  color: #0A66C2;
+  color: #0a66c2;
 }
-main #intro #intro-text #contacts img#github-svg {
+#intro-text #contacts img#github-svg {
   height: 29px;
 }
-main #intro #view-cv {
+#view-cv {
   background-color: #fc3b3b;
   padding: 6px 10px;
   border-radius: 8px;
   box-shadow: 2px 2px 0 rgb(136, 52, 52);
   transition: 200ms;
 }
-main #intro #view-cv:hover {
+#view-cv:hover {
   background-color: #cf3131;
 }
-main #intro #view-cv:active {
+#view-cv:active {
   background-color: #a32626;
 }
-main #intro #view-cv a {
+#view-cv a {
   font-size: 22px;
   color: white;
   text-decoration: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media (max-width: 733px) {
+  #intro {
+    flex-direction: column;
+  }
+  #intro-pic {
+    height: 450px;
+    width: 450px;
+    margin: 0 auto;
+    border-radius: 10%;
+    position: static;
+  }
+  #intro-text {
+    margin: 0 10%;
+    align-content: center;
+    text-align: center;
+  }
+  #intro-text #contacts {
+    justify-content: center;
+  }
+}
