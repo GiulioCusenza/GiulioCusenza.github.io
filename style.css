@@ -34,7 +34,6 @@ header h1 {
 #intro {
   display: flex;
   flex-direction: row;
-  gap: 25px;
   padding: 10px;
 }
 #intro-pic {
@@ -50,7 +49,7 @@ header h1 {
 #intro-text {
   display: flex;
   flex-direction: column;
-  margin: auto 0;
+  margin: auto 10px;
   font-size: 22px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
