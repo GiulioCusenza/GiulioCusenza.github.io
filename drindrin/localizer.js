@@ -101,6 +101,12 @@ async function search() {
       }
     })
   }
+  setTimeout(() => {
+    if (!table.innerHTML.includes("<td>")) {
+      table.innerHTML = "<tr><td>Nessun risultato</td></tr>";
+    }
+  }, 1000);
+
   return searchResults;
 }
 
