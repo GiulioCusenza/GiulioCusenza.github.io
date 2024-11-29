@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&family=Poppins:wght@400;500&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"
+    />
+
+    <link rel="stylesheet" href="localizer.css" />
+
+    <title>DrinDrin Localizer</title>
+  </head>
+  <body>
+    <p>Seleziona sulla mappa un luogo per un evento</p>
+    <div id="map"></div>
+    <div>
+      <label for="radiusBar">Raggio (km): </label>
+      <input
+        type="range"
+        name="radiusBar"
+        id="radiusBar"
+        min="5"
+        max="50"
+        step="5"
+        value="20"
+      />
+      <span id="radiusValue">20</span>
+    </div>
+    <button id="search">Cerca Drinners in zona</button>
+    <table id="searchResults"></table>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="localizer.js"></script>
+  </body>
+</html>

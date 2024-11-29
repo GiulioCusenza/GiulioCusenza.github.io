@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+    background-color: #ffd947;
+}
+
+#mapInstruction {
+    margin: 0;
+}
+
+#map {
+    height: 400px;
+    width: min(100%, 600px);
+}
+
+#search {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+
+    font: inherit;
+    color: white;
+    background-color: #262e33;
+
+    cursor: pointer;
+    transition: 300ms;
+}
+#search:hover {
+    filter: brightness(1.2);
+}
+#search:active {
+    filter: brightness(0.8);
+}
+
+#searchResults {
+    background-color: rgb(255, 254, 235);
+    border-collapse: collapse;
+}
+
+#searchResults th,
+#searchResults td {
+    padding: 10px;
+}
+
+#searchResults th {
+    font: inherit;
+    color: white;
+    background-color: #262e33;
+}

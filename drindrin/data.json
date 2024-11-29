@@ -1,0 +1,182 @@
+[
+    {
+        "name": "Giulio Cusenza",
+        "email": "giuliocusenza@gmail.com",
+        "city": "Palermo",
+        "zip": "90145"
+    },
+    {
+        "name": "Lucia Morello",
+        "email": "luciamorello@example.com",
+        "city": "Palermo",
+        "zip": "90145"
+    },
+    {
+        "name": "Alessandro Giordano",
+        "email": "alessandrogiordano@example.com",
+        "city": "Palermo",
+        "zip": "90145"
+    },
+    {
+        "name": "Maria Rossi",
+        "email": "mariarossi@example.com",
+        "city": "Naples",
+        "zip": "80100"
+    },
+    {
+        "name": "Antonio Esposito",
+        "email": "antonioesposito@example.com",
+        "city": "Naples",
+        "zip": "80100"
+    },
+    {
+        "name": "Francesca Russo",
+        "email": "francescarusso@example.com",
+        "city": "Naples",
+        "zip": "80100"
+    },
+    {
+        "name": "Luca Bianchi",
+        "email": "lucabianchi@example.com",
+        "city": "Rome",
+        "zip": "00100"
+    },
+    {
+        "name": "Giulia Mancini",
+        "email": "giuliamancini@example.com",
+        "city": "Rome",
+        "zip": "00100"
+    },
+    {
+        "name": "Marco Ferri",
+        "email": "marcoferri@example.com",
+        "city": "Rome",
+        "zip": "00100"
+    },
+    {
+        "name": "Anna Ferrara",
+        "email": "annaferrara@example.com",
+        "city": "Milan",
+        "zip": "20100"
+    },
+    {
+        "name": "Giovanni Bellini",
+        "email": "giovannibellini@example.com",
+        "city": "Milan",
+        "zip": "20100"
+    },
+    {
+        "name": "Silvia Conti",
+        "email": "silviaconti@example.com",
+        "city": "Milan",
+        "zip": "20100"
+    },
+    {
+        "name": "Francesco Lombardi",
+        "email": "francescolombardi@example.com",
+        "city": "Florence",
+        "zip": "50100"
+    },
+    {
+        "name": "Sofia Galli",
+        "email": "sofia.galli@example.com",
+        "city": "Florence",
+        "zip": "50100"
+    },
+    {
+        "name": "Paolo Ricci",
+        "email": "paoloricci@example.com",
+        "city": "Florence",
+        "zip": "50100"
+    },
+    {
+        "name": "Giovanna De Santis",
+        "email": "giovannadesantis@example.com",
+        "city": "Turin",
+        "zip": "10100"
+    },
+    {
+        "name": "Stefano Marini",
+        "email": "stefanomarin@example.com",
+        "city": "Turin",
+        "zip": "10100"
+    },
+    {
+        "name": "Elena Costa",
+        "email": "elenacosta@example.com",
+        "city": "Turin",
+        "zip": "10100"
+    },
+    {
+        "name": "Paolo Galli",
+        "email": "paologalli@example.com",
+        "city": "Genoa",
+        "zip": "16100"
+    },
+    {
+        "name": "Lucia D'Alessandro",
+        "email": "lucia.dalessandro@example.com",
+        "city": "Genoa",
+        "zip": "16100"
+    },
+    {
+        "name": "Francesco De Luca",
+        "email": "francescodeluca@example.com",
+        "city": "Genoa",
+        "zip": "16100"
+    },
+    {
+        "name": "Claudia Moretti",
+        "email": "claudiamoretti@example.com",
+        "city": "Bologna",
+        "zip": "40100"
+    },
+    {
+        "name": "Riccardo Marchetti",
+        "email": "riccardomarchetti@example.com",
+        "city": "Bologna",
+        "zip": "40100"
+    },
+    {
+        "name": "Alessandro Pugliese",
+        "email": "alessandropugliese@example.com",
+        "city": "Bologna",
+        "zip": "40100"
+    },
+    {
+        "name": "Marco Conti",
+        "email": "marcoconti@example.com",
+        "city": "Verona",
+        "zip": "37100"
+    },
+    {
+        "name": "Luca Zanetti",
+        "email": "lucazanetti@example.com",
+        "city": "Verona",
+        "zip": "37100"
+    },
+    {
+        "name": "Sara Bassi",
+        "email": "sarabassi@example.com",
+        "city": "Verona",
+        "zip": "37100"
+    },
+    {
+        "name": "Elena Caruso",
+        "email": "elenacaruso@example.com",
+        "city": "Catania",
+        "zip": "95100"
+    },
+    {
+        "name": "Giorgio Esposito",
+        "email": "giorgioesposito@example.com",
+        "city": "Catania",
+        "zip": "95100"
+    },
+    {
+        "name": "Rita Russo",
+        "email": "ritarusso@example.com",
+        "city": "Catania",
+        "zip": "95100"
+    }
+]
