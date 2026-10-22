@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,18 +11,39 @@
   <body>
     <header>
       <h1 id="name">Giulio Cusenza</h1>
+      <nav id="lang-switch" aria-label="Language">
+        <button type="button" data-lang="en" title="English">EN</button>
+        <button type="button" data-lang="it" title="Italiano">IT</button>
+        <button type="button" data-lang="de" title="Deutsch">DE</button>
+        <button type="button" data-lang="fr" title="Français">FR</button>
+        <button type="button" data-lang="ru" title="Русский">RU</button>
+      </nav>
     </header>
 
     <main>
       <div id="intro">
-        <img id="intro-pic" src="media/eu parliament.jpg" alt="" />
+        <!-- <img id="intro-pic" src="media/eu parliament.jpg" alt="" /> -->
         <div id="intro-text">
-          <p>
-            Master student in AI and Machine Learning @ Technical University
-            Darmstadt
+          <p data-i18n="study">
+            I am a Master student in
+            <i>Artificial Intelligence and Machine Learning</i> at the Technical
+            University Darmstadt.
           </p>
-          <p>Bachelor in Computational Linguistics @ University of Tübingen</p>
-          <p><i>Interested in language, languages, and AI.</i></p>
+          <p data-i18n="bachelor">
+            I did my Bachelor in
+            <i>Computational Linguistics</i>
+            at the University of Tübingen.
+          </p>
+          <p data-i18n="interests">
+            I am broadly interested in A.I. research, especially in
+            representation learning, interpretability, and multimodal
+            approaches. I have a passion for linguistics, philosophy, cooking,
+            and building virtual blocky structures.
+          </p>
+          <p data-i18n="languages">
+            Talk to me in Italian, English, French, Russian, German, Sicilian or
+            Arbëresh.
+          </p>
           <p id="contacts">
             <a
               href="mailto:giuliocusenza@gmail.com"
@@ -59,7 +80,7 @@
           </p>
           <p>
             <span id="view-cv">
-              <a href="./media/Giulio Cusenza - CV en.pdf" target="_blank">
+              <a href="./media/Giulio Cusenza - CV en.pdf" target="_blank" data-i18n="viewCv">
                 View CV
               </a>
             </span>
@@ -67,5 +88,6 @@
         </div>
       </div>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -9,7 +9,7 @@ html {
   display: table;
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(229, 208, 208);
+  background-color: rgb(47, 44, 58);
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 
 header {
   padding: 20px;
-  background-color: #ffb8b8;
+  background-color: #fc3b3b;
   position: relative;
   z-index: 1;
 }
@@ -28,7 +28,7 @@ header h1 {
   margin: 0;
   font-size: 36px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #fc3b3b;
+  color: white;
 }
 
 #intro {
@@ -45,16 +45,6 @@ header h1 {
   left: -40px;
   top: -40px;
   border-radius: 50%;
-}
-#intro-text {
-  display: flex;
-  flex-direction: column;
-  margin: auto 10px;
-  font-size: 22px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-#intro-text p {
-  margin: 15px 0;
 }
 #intro-text #contacts {
   display: flex;
@@ -85,7 +75,8 @@ header h1 {
 }
 #view-cv {
   background-color: #fc3b3b;
-  padding: 6px 10px;
+  font-weight: bold;
+  padding: 8px 10px;
   border-radius: 8px;
   box-shadow: 2px 2px 0 rgb(136, 52, 52);
   transition: 200ms;
@@ -121,4 +112,36 @@ header h1 {
   #intro-text #contacts {
     justify-content: center;
   }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#lang-switch {
+  display: flex;
+  gap: 4px;
+}
+#lang-switch button {
+  font: inherit;
+  font-size: 14px;
+  color: white;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 4px 6px;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: 200ms;
+}
+#lang-switch button:hover {
+  opacity: 1;
+}
+#lang-switch button.active {
+  opacity: 1;
+  border-color: white;
+  font-weight: bold;
 }
