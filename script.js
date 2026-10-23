@@ -2,7 +2,7 @@ const translations = {
   it: {
     name: "Giulio Cusenza",
     study:
-      "Sono uno studente magistrale in <i>Intelligenza Artificiale</i> presso l'Università Tecnica di Darmstadt.",
+      "Sono uno studente magistrale in <i>Intelligenza Artificiale e Apprendimento Automatico</i> presso l'Università Tecnica di Darmstadt.",
     bachelor:
       "Ho conseguito una laurea triennale in <i>Linguistica Computazionale</i> presso l'Università di Tubinga.",
     interests:
